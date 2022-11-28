@@ -143,3 +143,10 @@ and then we need to follow <https://github.com/pez/shadow-w-backend>, in order t
 5. you can evaluate something like `(js/alert "hey!")`
 
 This is where the video ends.
+
+## new changes
+We added shadow-cljs.edn with a deps alias, in this way when we start shadow-cljs with
+the npm bin it will fire clojure command and use that alias with the extra dependency.
+
+But if we start a repl without the cljs alias, it will be for our backend and it will not
+include that shadow-cljs dependency not needed for backed development.
